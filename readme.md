@@ -1,0 +1,1 @@
+A one-page, scrollable portfolio website I made for myself and for others to use and improve upon.
