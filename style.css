@@ -5,8 +5,13 @@
   color: #5AFFF5;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: #413C58;
+  margin-top: 20vh;
 }
 
 img{
@@ -31,6 +36,7 @@ section{
 section.landing{
   justify-content: flex-start;
   padding-top: 25%;
+  border-top: none;
 }
 
 section.landing p{
@@ -40,16 +46,21 @@ section.landing p{
 
 /* HEADER/NAV STYLING */
 header {
-  background-color: #444444;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: #5AFFF5 2px solid;
+  z-index: 1;
+  background-color: #2b2b2b;
 }
 
 nav{
   line-height: 1.5em;
   text-align: center;
+  height: 20vh;
 }
 
 nav li{
-  background-color: #444444;
   list-style-type: none;
 }
 
@@ -80,7 +91,8 @@ nav li a:hover{
 }
 
   .projects-container > .project-item{
-    border: black 3px solid;
+    border: #4659FF 3px solid;
+    background-color: #242424;
     display: flex;
     flex-direction: column;
     align-items: center;
