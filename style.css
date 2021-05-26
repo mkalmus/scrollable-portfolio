@@ -2,95 +2,128 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: #5AFFF5;
+}
+
+body{
+  background-color: #413C58;
 }
 
 img{
   width: 100%;
 }
 
-main{
-  padding: 1% 3%;
-}
-
-section{
-  height: 92vh;
-}
-
-section.landing{
+nav, section.landing, footer, header, .bottom-container{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+section{
+  padding: 3%;
+  min-height: 90vh;
+  background-color: #413C58;
   flex-direction: column;
+  border-top: #5AFFF5 2px solid;
+  font-family: 'Source Code Pro', monospace, sans-serif;
+}
+
+section.landing{
+  justify-content: flex-start;
+  padding-top: 25%;
+}
+
+section.landing p{
+  flex-direction: column;
+  line-height: 1.5em;
 }
 
 /* HEADER/NAV STYLING */
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: white 5px solid;
-  background-color: #343037;
-  height: 8vh;
-  padding: 3%;
+  background-color: #444444;
+}
+
+nav{
+  line-height: 1.5em;
+  text-align: center;
 }
 
 nav li{
-  display: inline-block;
+  background-color: #444444;
+  list-style-type: none;
 }
 
 nav li a{
-  color: #F1F4F2;
+  color: #5AFFF5;
   text-decoration: none;
   transition: all 0.3s ease 0s;
   font-size: 16px;
-}
-
-nav ul > li:not(:last-child){
-  padding-right: 50px;
+  font-family: 'Ubuntu Mono', monospace, sans-serif;
 }
 
 nav li a:hover{
-  color: blue;
-}
-
-button{
-  padding: 9px 25px;
-  background-color: blue;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer; 
-  transition: all 0.3s ease 0s;
-  color: #F1F4F2;
-}
-
-button:hover{
-  opacity: 0.8;
+  color: white;
 }
 
 /* PROJECT CONTAINERS */
+.projects h1{
+  text-align: center;
+}
+
 .projects-container{
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  padding: 0 10%;
 }
 
   .projects-container > .project-item{
     border: black 3px solid;
-    border-radius: 5px;
-    height: 350px;
-    width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    width: 100%;
+    font-size: 0.75em;
+  }
+
+  .projects-container > .project-item{
+    margin-top: 5%;
+    padding: 2%;
   }
 
     .project-item > .top-border{
-      border-top: 5px red solid;
+      border-top: 0px white solid;
     }
 
     .project-item > * {
       width: 100%;
+      padding: 1%;
     }
+
+    .project-item p:first-of-type {
+      opacity: 0.70;
+    }
+
+.bottom-container{
+  padding-top: 2%;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+button{
+  background-color: #5AFFF5;
+  border: none;
+  cursor: pointer; 
+  transition: all 0.3s ease 0s;
+  color: black;
+  padding: 2px 5px;
+  border-radius: 25px;
+  font-family: 'Ubuntu Mono', monospace, sans-serif;
+}
+
+button:hover{
+  opacity: 0.8;
+}
+
