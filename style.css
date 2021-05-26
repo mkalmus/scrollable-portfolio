@@ -11,7 +11,6 @@ html{
 
 body{
   background-color: #413C58;
-  margin-top: 20vh;
 }
 
 img{
@@ -25,17 +24,15 @@ nav, section.landing, footer, header, .bottom-container{
 }
 
 section{
-  padding: 3%;
-  min-height: 90vh;
+  min-height: 80vh;
   background-color: #413C58;
   flex-direction: column;
-  border-top: #5AFFF5 2px solid;
+  /* border-top: #5AFFF5 2px solid; */
   font-family: 'Source Code Pro', monospace, sans-serif;
 }
 
 section.landing{
-  justify-content: flex-start;
-  padding-top: 25%;
+  height: 60vh;
   border-top: none;
 }
 
@@ -46,22 +43,22 @@ section.landing p{
 
 /* HEADER/NAV STYLING */
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
-  border-bottom: #5AFFF5 2px solid;
-  z-index: 1;
   background-color: #2b2b2b;
+  height: 20vh;
+  border-bottom: #5AFFF5 3px solid;
+  flex-direction: column;
 }
 
 nav{
-  line-height: 1.5em;
   text-align: center;
-  height: 20vh;
 }
 
 nav li{
   list-style-type: none;
+  line-height: 1.5em;
 }
 
 nav li a{
@@ -77,6 +74,10 @@ nav li a:hover{
 }
 
 /* PROJECT CONTAINERS */
+#project-page{
+  padding-top: 23vh;
+}
+
 .projects h1{
   text-align: center;
 }
@@ -115,7 +116,7 @@ nav li a:hover{
     }
 
     .project-item p:first-of-type {
-      opacity: 0.70;
+      color: rgb(52, 150, 143);
     }
 
 .bottom-container{
@@ -130,12 +131,13 @@ button{
   cursor: pointer; 
   transition: all 0.3s ease 0s;
   color: black;
-  padding: 2px 5px;
+  padding: 5px;
   border-radius: 25px;
   font-family: 'Ubuntu Mono', monospace, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
 }
 
 button:hover{
   opacity: 0.8;
 }
-
